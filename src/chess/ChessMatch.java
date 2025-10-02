@@ -1,7 +1,5 @@
 package chess;
 
-import java.util.Iterator;
-
 import boardgame.Board;
 import boardgame.Position;
 import chess.pieces.King;
