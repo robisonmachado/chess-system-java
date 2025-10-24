@@ -49,6 +49,15 @@ public class ChessMatch {
 		return capturedPiece;		
 	}
 	
+	public boolean[][] possibleMoves(ChessPosition sourcePosition){
+		var position = sourcePosition.toPosition();
+		validateSourcePosition(position);
+		
+		return board.piece(position).possibleMoves();
+		
+		
+	}
+	
 	public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) {
 		var source = sourcePosition.toPosition();
 		var target = targetPosition.toPosition();

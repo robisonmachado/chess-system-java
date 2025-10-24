@@ -22,6 +22,10 @@ public class Program {
 				
 				var source = UI.readChessPosition(scanner);
 				
+				var possibleMoves = chessMatch.possibleMoves(source);
+				UI.clearScreen();
+				UI.printBoard(chessMatch.getPieces(), possibleMoves);
+				
 				System.out.println();
 				System.out.print("Target: ");
 				
